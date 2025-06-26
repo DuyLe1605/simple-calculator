@@ -65,6 +65,7 @@ export default function Calculator() {
         } else {
             if (result) {
                 setCurrentStr(result + value);
+                setResult(undefined);
                 return;
             }
 
