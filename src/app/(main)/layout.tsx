@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 import Link from "next/link";
@@ -19,6 +20,7 @@ export default function Layout({
                 </div>
             </nav>
             <main className="z-10">{children}</main>
+            <Footer />
         </div>
     );
 }

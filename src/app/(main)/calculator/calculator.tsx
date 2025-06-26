@@ -68,7 +68,7 @@ export default function Calculator() {
     };
 
     return (
-        <Card className="mx-auto w-120 max-w-md mt-50">
+        <Card className="mx-auto w-120 max-w-md my-33">
             <CardHeader>
                 <CardTitle className="text-center">Máy tính Linax-1605</CardTitle>
             </CardHeader>
