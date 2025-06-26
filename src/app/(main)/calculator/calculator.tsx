@@ -25,6 +25,11 @@ export default function Calculator() {
     const handleClick = (value: string) => {
         const { operand, operator } = extractLastOperation(currentStr);
         if ([...digits, "%"].includes(value)) {
+            if (result) {
+                setResult(undefined);
+                setCurrentStr(value);
+                return;
+            }
             setCurrentStr((prevState) => prevState + value);
         } else if (value === "C") {
             setCurrentStr("");
